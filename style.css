@@ -1,0 +1,83 @@
+body {
+	margin: 0;
+}
+header,
+footer {
+	display: flex;
+	justify-content: center;
+}
+
+.section {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+section:first-child {
+	background-color: turquoise;
+}
+
+section:last-child {
+	background-color: aquamarine;
+}
+
+.sectionCard {
+	min-height: 100vh;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.card {
+	height: 200px;
+	width: 150px;
+	border: 3px solid black;
+}
+
+.p {
+	max-width: 1000px;
+}
+
+.img {
+	max-width: 50%;
+}
+
+/* Responsive opp til mobil */
+@media (max-width: 426px) {
+	.p {
+		max-width: 300px;
+	}
+
+	.img {
+		max-width: 100%;
+		max-height: 18.75em;
+	}
+
+	.sectionCard {
+		flex-direction: column;
+	}
+}
+
+/* Responsive opp til nettbrett */
+@media (max-width: 770px) {
+	.p {
+		max-width: 700px;
+	}
+
+	.img {
+		max-width: 100%;
+		max-height: 40em;
+	}
+}
+
+/* Responsive opp til desktop */
+@media (max-width: 1023px) {
+	.p {
+		max-width: 700px;
+	}
+
+	.img {
+		max-width: 100%;
+		max-height: 35em;
+	}
+}
